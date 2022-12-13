@@ -1,0 +1,8 @@
+.idea/
+venv/
+thoughts.md
+.env
+./test_mongo.py
+__pycache__/
+*.swp
+*.pyc
