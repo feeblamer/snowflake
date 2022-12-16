@@ -48,8 +48,10 @@ def draw_petal(thickness, petal_length, angle):
 
 def positional(angle, thickness):
     turtle.penup()
+
     turtle.right(angle / 2)
-    hypo = math.sin(angle / 2) * 0.5 * thickness
+    angleon_2_rads = math.radians(angle / 2)
+    hypo = math.sin(angleon_2_rads) * 0.5 * thickness
     turtle.forward(hypo)
     turtle.left(angle / 2)
 
@@ -73,7 +75,7 @@ def main():
     turtle.pencolor("#000000")
     turtle.pensize(7)
     turtle.begin_fill()
-    draw_snowflake(11, 40, 200)
+    draw_snowflake(11, 43, 200)
     turtle.end_fill()
 
 
